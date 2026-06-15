@@ -69,6 +69,7 @@ function Upload({ onUploaded = () => {} }) {
             });
 
             onUploaded();
+            setFile(null);
             setMessage("Profile material uploaded and ready for questions.");
         } catch (error) {
             setMessage("Upload failed. Please check the file and try again.");

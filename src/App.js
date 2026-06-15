@@ -80,11 +80,6 @@ function App() {
                 <div className="hero__content">
                     <div className="hero__intro">
                         <p className="eyebrow">Private AI profile intelligence</p>
-                        <div className="hero__signals" aria-label="Assistant capabilities">
-                            <span>Semantic search</span>
-                            <span>Evidence-aware answers</span>
-                            <span>Profile memory</span>
-                        </div>
                     </div>
 
                     <Ask

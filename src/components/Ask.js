@@ -95,7 +95,7 @@ function Ask({ onAnswered = () => {}, onResult = () => {}, onCitationClick = () 
                     {answer && !isAsking && (
                         <small>
                             {sourceCount > 0
-                                ? "Evidence shown in the panel on the right →"
+                                ? "Evidence shown in the sources panel"
                                 : "Generated from uploaded profile context"}
                         </small>
                     )}
