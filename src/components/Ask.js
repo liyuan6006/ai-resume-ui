@@ -4,7 +4,7 @@ import { ENDPOINTS } from "../config";
 import { splitCitations } from "../sourceUtils";
 
 const questionPrompt =
-    "Hi, I am Yuan. I am happy to talk to you. Ask anything about me, my background, my skills, my projects, or my experience.";
+    "Ask anything about your uploaded materials — your background, your skills, your projects, your experience. Your AI assistant has read it all and is ready to answer.";
 
 function Ask({ onAnswered = () => {}, onResult = () => {}, onCitationClick = () => {} }) {
     const [question, setQuestion] = useState("");
@@ -66,8 +66,8 @@ function Ask({ onAnswered = () => {}, onResult = () => {}, onCitationClick = () 
         <article className="panel ask-panel">
             <div className="panel__header">
                 <div>
-                    <p className="section-kicker">Profile Q&amp;A</p>
-                    <h2>Ask Yuan Anything</h2>
+                    <p className="section-kicker">Ask your knowledge base</p>
+                    <h3>Ask Anything, Get Sourced Answers</h3>
                 </div>
             </div>
 
@@ -86,7 +86,7 @@ function Ask({ onAnswered = () => {}, onResult = () => {}, onCitationClick = () 
                 onClick={askQuestion}
                 disabled={!question.trim() || isAsking}
             >
-                {isAsking ? "Searching resume..." : "Ask assistant"}
+                {isAsking ? "Searching your knowledge base…" : "Ask your assistant"}
             </button>
 
             <section className="answer-box" aria-live="polite">
@@ -96,7 +96,7 @@ function Ask({ onAnswered = () => {}, onResult = () => {}, onCitationClick = () 
                         <small>
                             {sourceCount > 0
                                 ? "Evidence shown in the sources panel"
-                                : "Generated from uploaded profile context"}
+                                : "Generated from your uploaded materials"}
                         </small>
                     )}
                 </div>
@@ -106,7 +106,7 @@ function Ask({ onAnswered = () => {}, onResult = () => {}, onCitationClick = () 
                         <span></span>
                         <span></span>
                         <span></span>
-                        <em>Analyzing profile context…</em>
+                        <em>Reading your materials and finding the answer…</em>
                     </div>
                 ) : answer ? (
                     <p className="answer-text">

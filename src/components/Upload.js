@@ -70,7 +70,7 @@ function Upload({ onUploaded = () => {} }) {
 
             onUploaded();
             setFile(null);
-            setMessage("Profile material uploaded and ready for questions.");
+            setMessage("Uploaded! Your AI has learned from this material and it's ready for questions.");
         } catch (error) {
             setMessage("Upload failed. Please check the file and try again.");
         } finally {
@@ -82,8 +82,8 @@ function Upload({ onUploaded = () => {} }) {
         <article className="panel upload-panel">
             <div className="panel__header">
                 <div>
-                    <p className="section-kicker">Source material</p>
-                    <h2>Upload Profile Content</h2>
+                    <p className="section-kicker">Build your knowledge base</p>
+                    <h2>Upload Your Materials</h2>
                 </div>
                 <span className={file ? "status-pill status-pill--ready" : "status-pill"}>
                     {file ? "Ready" : "Waiting"}
@@ -125,7 +125,7 @@ function Upload({ onUploaded = () => {} }) {
                     <span className="dropzone__icon" aria-hidden="true">↑</span>
                     <span className="dropzone__text">
                         <strong>Drop a file or click to browse</strong>
-                        <small>Resumes, project notes, awards, or testimonials — PDF, Word, or text.</small>
+                        <small>Resumes, project notes, awards, or testimonials — PDF, Word, or text. Our AI instantly learns from everything you add.</small>
                     </span>
                 </label>
             )}

@@ -79,7 +79,34 @@ function App() {
             <section className="hero">
                 <div className="hero__content">
                     <div className="hero__intro">
-                        <p className="eyebrow">Private AI profile intelligence</p>
+                        <p className="eyebrow">Your private AI knowledge base</p>
+                        <h2 className="hero__title">
+                            Turn your own data, materials, and documents into an intelligent assistant.
+                        </h2>
+                        <p className="hero__lede">
+                            Our AI model reads, understands, transforms, and computes your data —
+                            then remembers all of your materials. Ask anything about your work or
+                            projects and our AI acts like a super-agent, chatting through it with
+                            you and pointing to the exact evidence and citations behind every
+                            answer.
+                        </p>
+
+                        <ol className="hero__steps">
+                            <li>
+                                <span className="hero__step-num">1</span>
+                                <span className="hero__step-text">
+                                    <strong>Upload your materials</strong>
+                                    Drop your files in the upload section below.
+                                </span>
+                            </li>
+                            <li>
+                                <span className="hero__step-num">2</span>
+                                <span className="hero__step-text">
+                                    <strong>Ask any question</strong>
+                                    Get instant, sourced answers from your own content.
+                                </span>
+                            </li>
+                        </ol>
                     </div>
 
                     <Ask
@@ -114,9 +141,10 @@ function App() {
                             </div>
 
                             <p className="ai-console__copy">
-                                Yuan's profile assistant is ready. Ask about background, skills,
-                                projects, experience, and fit. Sources and evidence for each answer
-                                will appear here.
+                                Your assistant is ready. Ask anything about the materials you've
+                                uploaded — background, skills, projects, experience, and more.
+                                Every answer comes with the sources and evidence behind it, shown
+                                right here.
                             </p>
                         </>
                     )}
